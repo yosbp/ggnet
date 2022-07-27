@@ -22,7 +22,8 @@ header{
 }
 
 .header__logo{
-    font-size: 2rem;
+    object-fit: cover;
+    margin-top: 3rem;
 }
 
 .header__links{
@@ -56,8 +57,8 @@ header{
 }
 
 .nav__img{
-    width: 80%;
-    height: 80%;
+    margin-top: 3rem;
+    width: 60%;
     object-fit: cover;
     text-align: center;
     border-radius: 15px;
