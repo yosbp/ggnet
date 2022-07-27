@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+header{
+    background-color: white(70, 68, 68, 0.37);
+    height: 5rem;
+    margin: 0  8%;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header__logo{
+    font-size: 2rem;
+}
+
+.header__links{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 4rem;
+    font-size: 1.5rem;
+}
+
+.nav{
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8%;
+}
+
+.nav__left{
+    width: 50%;
+}
+
+.nav__text{
+    color: rgb(29, 29, 165);
+    font-size: 3rem;
+    justify-content: center;
+}
+
+.nav__right{
+    width: 50%;
+}
+
+.nav__img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 15px;
+    transform: rotate(20deg);
+}
+
+.covered{
+    margin: 0 5%;
+    height: 50vh;
+    padding: 0.1px;
+}
+
+.covered__title{
+    font-size: 2rem;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.covered__container{
+    display: flex;
+    padding: 1.2rem;
+    height: 85%;
+    overflow: hidden;
+}
+
+.covered__sites{
+    background-image: url(Cua.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    border: solid 2px rgba(0, 0, 0, 0) ;
+    flex: 1;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.covered__sites.cua{
+    background-image: url(Cua.JPG) ;
+}
+
+.chara{
+    background-image: url(Charallave.JPG) ;
+}
+
+.ocumare{
+    background-image: url(Ocumare.JPG) ;
+}
+
+
+.covered__sites:hover{
+    flex: 2;
+}
+
+.site__title{
+    font-size: 4rem;
+    text-align: center;
+    transition: 0.5s;
+    color: black;
+    margin-top: 30%;
+    font-weight: 500;
+}
+
+.covered__sites:hover .site__title{
+    margin-top: 10%;
+    margin-left: 0%;
+}
+
+.site__subtitle{
+    text-align: center;
+    font-size: 2rem;
+    opacity: 0;
+    transition: 0.5s;
+    margin-top: 300px;
+}
+
+.covered__sites:hover .site__subtitle{
+    position: relative;
+    opacity: 100;
+    color: rgb(0, 0, 0);
+    margin-top: 0px;
+}
