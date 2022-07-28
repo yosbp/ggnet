@@ -2,16 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 body{
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
+/*Header*/
+
 header{
     background-color: white(70, 68, 68, 0.37);
-    height: 5rem;
+    height: 10vh;
     margin: 0  8%;
 }
 .header__container{
@@ -28,13 +30,23 @@ header{
 
 .header__links{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #1d1da5;
     margin-right: 4rem;
     font-size: 1.5rem;
 }
 
+.contacto{
+    padding: 0.5rem;
+    border: 1px transparent solid ;
+    background-color: #6b8cc1; 
+    border-radius: 25px;  
+    color: white; 
+}
+
+/* NAV */
+
 .nav{
-    height: 50vh;
+    height: 80vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -47,10 +59,19 @@ header{
 }
 
 .nav__text{
-    color: rgb(29, 29, 165);
+    color: #1d1da5;
     font-size: 3rem;
     justify-content: center;
+    font-weight: 800;
 }
+
+.nav__paraph{
+    font-size: 1.2rem;
+    text-align: start;
+    margin-top: 1.5rem;
+    line-height: 3rem;
+}
+
 
 .nav__right{
     width: 50%;
@@ -63,7 +84,26 @@ header{
     text-align: center;
     border-radius: 15px;
     transform: rotate(20deg);
+    min-width: 300px;
 }
+
+/*Confianza*/
+
+.confident{
+    background-color: #6b8cc1;
+    height: 10vh;
+    padding: 0.1px;
+}
+
+.confident__text{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    height: 100%;
+    margin-top: 30px;
+}
+
+/* ZONAS DE COBERTURA */
 
 .covered{
     margin: 0 5%;
@@ -72,9 +112,11 @@ header{
 }
 
 .covered__title{
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center; 
     margin-top: 20px;
+    font-weight: 500;
+    color: #1d1da5;
 }
 
 .covered__container{
@@ -90,7 +132,7 @@ header{
     background-position: center;
     background-size: cover;
     height: 100%;
-    border: solid 2px rgba(0, 0, 0, 0) ;
+    border-radius: 20px;
     flex: 1;
     transition: 0.5s;
     overflow: hidden;
@@ -98,7 +140,7 @@ header{
 }
 
 .covered__sites.cua{
-    background-image: url(Cua.JPG) ;
+    background-image: url(Cua.JPG);
 }
 
 .chara{
@@ -141,4 +183,60 @@ header{
     opacity: 100;
     color: rgb(0, 0, 0);
     margin-top: 0px;
+}
+
+/* PLANES */ 
+
+.plans{
+    height: 50vh;
+    margin: 0 8%;
+}
+
+.plans__container{
+    height: 80%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.plans__cards{
+    text-align: center;
+    border: 1px #1d1da5 solid;
+    width: 20%;
+    height: 100%;
+    padding: 1.5rem;
+    border-radius: 25px;
+    margin-right: 50px;
+}
+
+.card__title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.plans__cards h6{
+    font-size: 1.2rem;
+    color: rgb(206, 169, 21);
+}
+
+.plans__cards h5{
+    font-size: 1.5rem;
+    color: #1d1da5;
+}
+
+.plans__cards h4{
+    font-size: 1.8rem;
+    color: rgb(206, 169, 21);
+}
+
+.plans__cards h3{
+    font-size: 2.1rem;
+    color: #1d1da5;
+}
+
+.plans__cards h2{
+    font-size: 2.4rem;
+    color: rgb(206, 169, 21);
 }
