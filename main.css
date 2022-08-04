@@ -25,8 +25,8 @@ header{
 }
 
 .header__logo{
+    height: 100%;
     object-fit: cover;
-    margin-top: 3rem;
 }
 
 .header__links{
@@ -62,7 +62,6 @@ header{
 .nav__text{
     color: #1d1da5;
     font-size: 3.4rem;
-    justify-content: center;
     font-weight: 800;
 }
 
@@ -85,7 +84,7 @@ header{
     text-align: center;
     border-radius: 15px;
     transform: rotate(20deg);
-    min-width: 300px;
+    min-width: 250px;
 }
 
 /*Confianza*/
@@ -128,7 +127,6 @@ header{
 }
 
 .covered__sites{
-    background-image: url(Cua.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -280,4 +278,69 @@ header{
 .socials__icons{
     font-size: 4rem;
     margin-right: 3rem;
+    color: #1d1da5;
+}
+
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .nav__left{
+        width: 90%;
+    }
+
+    .covered{
+        margin: 0 2%;
+    }
+
+    .covered__container{
+        flex-direction: column;
+    }
+
+    .covered__sites{
+        margin-bottom: 1rem;
+    }
+
+    .covered__sites:hover{
+        flex: 3;
+    }
+
+    .site__title{
+        margin-top: 0;
+    }
+    
+    .covered__sites:hover .site__title{
+        margin-top: 0;
+    }   
+
+    /* PLANES */ 
+
+.plans{
+    margin: 0;
+    height: 80vh;
+}
+
+.plans__container{
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.plans__cards{
+    text-align: center;
+    width: 40%;
+    height: 300px;
+    padding: 1rem;
+    margin: 10px 15px 10px 15px;
+    margin-right: 0px;
+
+}
 }
