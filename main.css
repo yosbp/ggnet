@@ -194,6 +194,7 @@ header{
 .plans__container{
     height: 80%;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     margin-top: 1.5rem;
@@ -202,11 +203,11 @@ header{
 .plans__cards{
     text-align: center;
     border: 1px #1d1da5 solid;
-    width: 20%;
-    height: 100%;
-    padding: 1.5rem;
+    width: 25%;
+    height: 350px;
+    padding: 1.3rem;
     border-radius: 25px;
-    margin-right: 50px;
+    margin: 10px 15px 10px 15px;
 }
 
 .card__title{
@@ -281,7 +282,7 @@ header{
     color: #1d1da5;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1350px) {
     html {
         font-size: 13px;
     }
@@ -330,7 +331,6 @@ header{
 }
 
 .plans__container{
-    flex-wrap: wrap;
     margin-top: 0;
 }
 
@@ -339,8 +339,5 @@ header{
     width: 40%;
     height: 300px;
     padding: 1rem;
-    margin: 10px 15px 10px 15px;
-    margin-right: 0px;
-
 }
 }
