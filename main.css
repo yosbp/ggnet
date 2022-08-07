@@ -14,7 +14,6 @@ body{
 
 header{
     background-color: white(70, 68, 68, 0.37);
-    height: 10vh;
     margin: 0  8%;
 }
 .header__container{
@@ -22,11 +21,23 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    flex-wrap: wrap;
 }
 
-.header__logo{
-    height: 100%;
+.header__hamburger{
+    font-size: 2.5rem;
+    justify-self: end;
+    display: none;
+}
+
+.header__logo img{
     object-fit: cover;
+    height: 7rem;
+}
+
+.links{
+    list-style: none;
+    display: flex;
 }
 
 .header__links{
@@ -84,7 +95,7 @@ header{
     text-align: center;
     border-radius: 15px;
     transform: rotate(20deg);
-    min-width: 250px;
+    min-width: 20rem;
 }
 
 /*Confianza*/
@@ -100,7 +111,9 @@ header{
     font-size: 2rem;
     color: white;
     height: 100%;
-    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ZONAS DE COBERTURA */
@@ -187,12 +200,10 @@ header{
 /* PLANES */ 
 
 .plans{
-    height: 50vh;
     margin: 0 8%;
 }
 
 .plans__container{
-    height: 80%;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -204,7 +215,7 @@ header{
     text-align: center;
     border: 1px #1d1da5 solid;
     width: 25%;
-    height: 350px;
+    height: 100%;
     padding: 1.3rem;
     border-radius: 25px;
     margin: 10px 15px 10px 15px;
@@ -290,9 +301,33 @@ header{
 
 @media only screen and (max-width: 768px) {
 
+    .header__logo{
+        width: 80%;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .links.active{
+        display: flex;
+        line-height: 3rem;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .header__hamburger{
+        display: block;
+    }
+
     .nav{
         flex-direction: column;
         margin: 0;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .nav__left{
@@ -327,7 +362,6 @@ header{
 
 .plans{
     margin: 0;
-    height: 80vh;
 }
 
 .plans__container{
@@ -340,4 +374,10 @@ header{
     height: 300px;
     padding: 1rem;
 }
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
 }
