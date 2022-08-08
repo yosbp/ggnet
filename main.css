@@ -28,6 +28,7 @@ header{
     font-size: 2.5rem;
     justify-self: end;
     display: none;
+    cursor: pointer;
 }
 
 .header__logo img{
@@ -305,6 +306,14 @@ header{
         width: 80%;
     }
 
+    .nav{
+        height: auto;
+    }
+
+    .confident{
+        height: 5rem;
+    }
+
     .links{
         display: none;
     }
@@ -325,9 +334,10 @@ header{
 
     .nav{
         flex-direction: column;
-        margin: 0;
+        margin: 0 0 3rem 0;
         align-items: center;
         justify-content: space-evenly;
+        
     }
 
     .nav__left{
@@ -335,6 +345,7 @@ header{
     }
 
     .covered{
+        height: 35rem;
         margin: 0 2%;
     }
 
@@ -379,5 +390,13 @@ header{
 @media only screen and (max-width: 480px) {
     html {
         font-size: 12px;
+    }
+
+    .covered__title{
+        margin-top: 2rem;
+    }
+
+    .plans{
+        margin: 4rem 0 0 0;
     }
 }
