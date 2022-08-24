@@ -95,8 +95,9 @@ header{
     object-fit: cover;
     text-align: center;
     border-radius: 15px;
-    transform: rotate(20deg);
+    /*transform: rotate(20deg);*/
     min-width: 20rem;
+    background-color: transparent;
 }
 
 /*Confianza*/
